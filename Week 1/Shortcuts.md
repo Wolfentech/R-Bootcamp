@@ -21,7 +21,7 @@ Cmd + Shift + 0
 Highlight  --> Ctrl + Enter OR Cmd + Enter
 
 ### Clear Console
-Ctrl + L OR Cmd + L
+Ctrl + L
 
 ### Render Markdown
 Ctrl + Shift + K OR Cmd + Shift + K
