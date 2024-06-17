@@ -1,0 +1,30 @@
+# Week 2
+
+## Web of Science (WoS)
+Web of Science (Wos) is a website to gather resources to research. It has many details on the resources, which additionally assists in researching and writing.
+
+#### Note:
+You need to have credentials from your institution to gain full access to WoS.
+
+You start by searching your topic. It helps to Sort by "Citations: Highest First" as it has more people who have read through and cited that resource, which lessens your work on reading through the entire article, as they have already cited the important parts of the article. By using filters with your topic, it helps narrow down and refine the results to what you want to see. For example, the resullts show a wide array of media (videos, articles, books, etc.) but you would only want the articles or books. You can filter it down so only artles and books show up.
+
+To export the data out in order to be able to access the data in R, you should export the data into Excel format. When exporting, you can choose what data is going to be exported in custom (Author, Title, Source, Keywords, Citations, etc.) After that, you must open it up into Excel (or Google Sheets) and export that file (after cleaning it up) into a Comma Separated Values format. (CSV).
+
+#### Note:
+It would be asier to put it into a pivot table or a formatted table before exporting into CSV.
+
+## Excel Figures
+Start with opening the Excel file and opening a new sheet in the same file. Copy the Authors from the file to the new sheet for the first row. You select the Authors Column in the new sheet, and go to data -> Text to Columns -> Delimited and choose the appropriate spacing. It is usually commas.
+
+Then you want to copy the column of the data that you want to use. You should now highlight the cells you want to visualize, and then go to Insert -> Recommend Chart and then choose a chart for your needs. To add additional elements to the chart, you can go to Chart Design -> Add Chart Element and then choose the element you want to add.
+
+## Bibliometrix
+Bibliometrix is a data visualization tool in the form of a local webapp. It does not come preinstalled with R, but it is a 1st-party module built on shiny.
+
+#### Note:
+Read on shiny later. Shiny is an additional module used with R to make WebApps using the Data Visualization features in R
+
+Once installed, run `library(bibliometrix)`. To load bibliometrix. To run the actual module/tool, run `biblioshiny()`. This will open up a local webapp to run and analyze your data. This is still running in R, but this is just a more user-friendly way to analyze data. You should upload the Raw data from WoS into Biblioshiny to analyze it. There are many different structures to choose from for visualization. 
+
+#### Note:
+Remember to press the play button to start visualization process.
